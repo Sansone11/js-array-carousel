@@ -27,6 +27,10 @@ ul {
 	display: block;
 }
 
+.slides-wrapper{
+    padding: 0;
+}
+
 .arrows {
 	display: flex;
 	justify-content: space-between;

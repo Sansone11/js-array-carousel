@@ -62,5 +62,15 @@ nextElement.addEventListener('click', function () {
 const prevElement = document.querySelector('.arrow-prev');
 
 prevElement.addEventListener('click', function () {
+     // togliere active dalla slide attiva
+     slideElements[elementTrack].classList.remove('active');
+
+     // aggiungere la classe active alla slide successiva (se esiste)
+     if (elementTrack === 0) {
+         elementTrack = 4;
+         slideElements[elementTrack].classList.add('active');
+     } else {
+         slideElements[--elementTrack].classList.add('active');
+     }
    
 })
